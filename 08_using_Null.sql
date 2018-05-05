@@ -1,3 +1,6 @@
+
+-- Using Null -- 
+
 -- 1. NULL, INNER JOIN, LEFT JOIN, RIGHT JOIN
 /*
 	List the teachers who have NULL for their department.
@@ -72,7 +75,7 @@ SELECT dept.name, COUNT(teacher.id)
   ON teacher.dept = dept.id
 GROUP BY dept.name
 
--- 9.
+-- 9. Sci or Art department
 /*
 	Use CASE to show the name of each teacher followed by 'Sci' if
 	the teacher is dept 1 or 2, and 'Art' otherwise.
@@ -81,7 +84,7 @@ GROUP BY dept.name
 SELECT name, CASE WHEN dept = 1 OR dept = 2 THEN 'Sci' ELSE 'Art' END
   FROM teacher;
 
--- 10.
+-- 10. Sci, Art, or None department
 /*
 	Use CASE to show the name of each teacher followed by 'Sci' if the
 	teacher is in dept 1 or 2, show 'Art' if the teacher's dept is 3 and

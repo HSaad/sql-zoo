@@ -1,4 +1,7 @@
--- 1. Introducin the world table of countries
+
+-- SELECT basics --
+
+-- 1. Introducing the world table of countries
 /*
 	Show the population of Germany
 */

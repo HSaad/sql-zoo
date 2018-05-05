@@ -1,3 +1,6 @@
+
+-- More JOIN operations -- 
+
 -- 1. 1962 movies
 /*
 	List the films where the yr is 1962
@@ -7,7 +10,7 @@ SELECT id, title
  FROM movie
  WHERE yr=1962;
 
--- 2.When was Citizen Kand released?
+-- 2. When was Citizen Kand released?
 /*
 	Give year of 'Citizen Kane'
 */
@@ -152,7 +155,7 @@ SELECT actor.name
    HAVING COUNT(actor.name) >= 30
  ORDER BY actor.name; 
 
--- 14. 
+-- 14. Films released in 1978
 /*
 	List the films released in the year 1978 ordered by the number of
 	actors in the cast, then by title.
@@ -164,7 +167,7 @@ SELECT title, COUNT(casting.actorid)
   GROUP BY title
  ORDER BY COUNT(casting.actorid) DESC, title; 
 
--- 15.
+-- 15. Worked with Art Garfunkel
 /*
 	List all the people who have worked with 'Art Garfunkel'
 */

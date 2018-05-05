@@ -1,3 +1,6 @@
+
+-- SELECT from WORLD -- 
+
 -- 1. All Countries
 /*
 	Show the name, continent and population of all countries. 

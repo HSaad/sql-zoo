@@ -1,3 +1,6 @@
+
+-- SELECT within SELECT -- 
+
 -- 1. Bigger than Russia
 /*
 List each country name where the population is larger than
@@ -92,7 +95,7 @@ SELECT continent, MIN(name) FROM world
  GROUP BY continent
  ORDER BY continent;
 
--- 9.
+-- 9. Large Populated Countries
 /*
 	Find the continents where all countries have a population
 	<= 250000000. Then find the names of the countries 
@@ -107,7 +110,7 @@ SELECT name, continent, population
     WHERE x.continent = y.continent 
     AND y.population > 0);
 
--- 10.
+-- 10. Populations larger than three times their neighbours
 /*
 	Some countries have populations more than three times
 	that of any of their neighbours (in the same continent). Give

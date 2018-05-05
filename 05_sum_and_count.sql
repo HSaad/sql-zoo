@@ -1,3 +1,6 @@
+
+-- SUM and COUNT -- 
+
 -- 1. Total world population
 /*
 	Show the total population of the world.

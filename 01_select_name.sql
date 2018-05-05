@@ -1,6 +1,9 @@
+
+-- SELECT names --
+
 -- 1. Start with Y
 /*
-  Find the country that start with Y
+  Find the country that starts with Y
 */
 
 SELECT name FROM world
@@ -14,7 +17,7 @@ SELECT name FROM world
 SELECT name FROM world
   WHERE name LIKE '%y';
 
--- 3. Contain x
+-- 3. Contains x
 /*
   Find the countries that contain the letter x.
 */
